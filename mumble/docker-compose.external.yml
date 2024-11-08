@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  mumble:
+    networks:
+      - default
+
+networks:
+  default:
+    external:
+      name: default

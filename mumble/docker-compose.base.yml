@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  mumble:
+    restart: always
+    container_name: mumble
+    image: mumblevoip/mumble-server
+    volumes:
+      - ${PWD}/mumble:/etc/murmur
+    ports:
+      - 2544:2544
+      - 2544:2544/udp
